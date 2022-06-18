@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>JS4 - PLUS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <h3>Bài 1:Tính ngày hôm qua, ngày mai</h3>
+    <div class="form-group">
+        <input type="number" class="form-control w-25" id="ngay" placeholder="Nhập vào ngày">
+        <input type="number" class="form-control w-25" id="thang" placeholder="Nhập vào tháng">
+        <input type="number" class="form-control w-25" id="nam" placeholder="Nhập vào năm">
+        <button class="mt-2 btn btn-success" id="btnHomQua"> Ngày hôm qua</button>
+        <button class="mt-2 btn btn-success ml-3" id="btnNgayMai"> Ngày mai</button>
+    </div>
+    <div class="alert alert-success" id="ketQua_b1"></div>
+    <hr>
+    <h3>bài tập 2 : cho phép người dùng nhập vào 1 tháng (không tính năm nhuận )
+        in ra tháng đó có bao nhiêu ngày
+    </h3>
+    <div class="form-group">
+        <p>nhập vào tháng </p>
+        <input type="number" class="form-control col-4" id="nhapThang" placeholder="Nhập tháng">
+        <input type="number" class="form-control col-4" id="nhapNam" placeholder="Nhập năm">
+        <button class="mt-2 btn btn-success" id="btnTinhNgay"> tính ngày</button>
+    </div>
+    <div class="alert alert-success" id="ketQua_b2"></div>
+    <hr>
+    <h3>Bài tập 3:In ra cách đọc 3 nguyên</h3>
+    <div class="form-group">
+        <p>Nhập vào nguyên có 3 chữ số</p>
+        <input type="number" class="form-control" id="so" placeholder="Nhập số vào đây">
+        <button class="mt-2 btn btn-success" id="btnDocSo"> Đọc số</button>
+    </div>
+    <div class="alert alert-success" id="ketQua_b3"></div>
+
+    <h3>Bài tập 4: Tính tọa độ sinh viên xa trường nhất</h3>
+    <div class="form-group row">
+        <div class="col-4 mt-2">
+            <p>Nhập tên HS_1</p>
+            <input type="type" class="form-control " id="tenHS1">
+        </div>
+        <div class="col-4 mt-2">
+            <p>Tọa độ X1</p>
+            <input type="number" class="form-control " id="nhapX1">
+        </div>
+        <div class="col-4 mt-2">
+            <p>Tọa độ Y1</p>
+            <input type="number" class="form-control " id="nhapY1">
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-4 mt-2">
+            <p>Nhập tên HS_2</p>
+            <input type="type" class="form-control" id="tenHS2">
+        </div>
+        <div class="col-4 mt-2">
+            <p>Tọa độ X2</p>
+            <input type="number" class="form-control" id="nhapX2">
+        </div>
+        <div class="col-4 mt-2">
+            <p>Tọa độ Y2</p>
+            <input type="number" class="form-control" id="nhapY2">
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-4 mt-2">
+            <p>Nhập tên HS_3</p>
+            <input type="type" class="form-control" id="tenHS3">
+        </div>
+        <div class="col-4 mt-2">
+            <p>Tọa độ X3</p>
+            <input type="number" class="form-control" id="nhapX3">
+        </div>
+        <div class="col-4 mt-2">
+            <p>Tọa độ Y3</p>
+            <input type="number" class="form-control" id="nhapY3">
+        </div>
+    </div>
+    <div class="form-group row">
+        <span class="mb-2 mt-2 ml-3 " style="color: brown ; font-size: larger;">Trường học</span>
+        <div class="col-4 mt-2">
+            <p>Tọa độ X_Truong</p>
+            <input type="number" class="form-control" id="nhapXTruong">
+        </div>
+        <div class="col-4 mt-2">
+            <p>Tọa độ Y_Truong</p>
+            <input type="number" class="form-control" id="nhapYTruong">
+        </div>
+    </div>
+    <button class="btn btn-success mt-2 ml-3" id="btnTinhToaDo">Tính Tọa Độ</button>
+    <div class="alert alert-success mt-3" id="ketQua_b4"></div>
+    <hr>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
